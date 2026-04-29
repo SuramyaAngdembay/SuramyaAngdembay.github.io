@@ -33,11 +33,26 @@
         <div class="hero-copy">
           <p class="eyebrow">Computer Science and Mathematics at Southern Miss</p>
           <h1><span>Suramya</span><span>Angdembay</span></h1>
-          <p class="hero-text">
-            I build applied ML and scientific computing systems across insider threat detection,
-            ocean and weather data, quantum simulation, and geospatial risk tools. My portfolio is
-            project-first: what I have built, measured, presented, and shipped.
-          </p>
+          <div class="hero-text">
+            <p>
+              I'm an undergraduate researcher at The University of Southern Mississippi, where I
+              study Computer Science and Mathematics. I work as a Research Assistant at the
+              Institute for Advanced Analytics and Society, contributing to AQUAVIEW through ocean
+              data workflows, MCP connector work, and ML-corrected mixed layer depth and hurricane
+              heat potential prototypes.
+            </p>
+            <p>
+              I was awarded the $2,000 Wright W. & Annie Rea Cross Mathematics Research Scholarship
+              in 2025, and I am part of the USM Honors College through the Honors Keystone Scholar
+              Award. In 2026, I was also selected for the Break Through Tech AI Fellowship by
+              Cornell Tech.
+            </p>
+            <p>
+              My work is project-first: applied ML, scientific computing, HPC workflows, ocean and
+              weather data systems, and research prototypes that turn messy real-world data into
+              something measurable, explainable, and useful.
+            </p>
+          </div>
 
           <div class="hero-actions" aria-label="Profile links">
             <a class="button primary" href="assets/suramya-angdembay-resume.pdf">
@@ -279,7 +294,7 @@
             </a>
           </article>
 
-          <article class="project-card" data-category="research ml data systems">
+          <article class="project-card featured" data-category="research ml data systems">
             <div class="card-topline">
               <span class="project-type">AQUAVIEW</span>
               <span class="date">2026</span>
@@ -290,6 +305,10 @@
               Gulf of Mexico, combining RTOFS model fields with nearby in-situ observations and
               provenance-aware confidence output.
             </p>
+            <ul class="compact-list">
+              <li>Built a replay sandbox for querying corrected MLD at a clicked map location and date.</li>
+              <li>Integrated model output, nearby observations, correction fields, confidence, and provenance.</li>
+            </ul>
             <div class="tag-row">
               <span>Python</span>
               <span>FastAPI</span>
@@ -304,7 +323,7 @@
             </a>
           </article>
 
-          <article class="project-card" data-category="research ml data systems">
+          <article class="project-card featured" data-category="research ml data systems">
             <div class="card-topline">
               <span class="project-type">AQUAVIEW</span>
               <span class="date">2026</span>
@@ -315,6 +334,10 @@
               applying TEOS-10 thermodynamics to Argo and RTOFS profiles before correcting scalar
               TCHP estimates.
             </p>
+            <ul class="compact-list">
+              <li>Computed TCHP/HHP with TEOS-10-backed profile processing for storm replay cases.</li>
+              <li>Benchmarked tabular ML corrections against raw RTOFS using Argo-derived targets.</li>
+            </ul>
             <div class="tag-row">
               <span>Python</span>
               <span>TEOS-10</span>

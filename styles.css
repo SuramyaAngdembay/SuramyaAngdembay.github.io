@@ -183,6 +183,8 @@ h3 {
 }
 
 .hero-text {
+  display: grid;
+  gap: 10px;
   max-width: 72ch;
   color: var(--text);
   font-size: 1.06rem;
