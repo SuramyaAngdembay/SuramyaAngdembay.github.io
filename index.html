@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Suramya Angdembay: applied machine learning, HPC research, ocean and weather data platforms, quantum simulation, and conference presentations."
+    />
+    <title>Suramya Angdembay | Projects, Research, Presentations</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Suramya Angdembay home">
+        <span class="brand-mark">SA</span>
+        <span>Suramya Angdembay</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science and Mathematics at Southern Miss</p>
+          <h1><span>Suramya</span><span>Angdembay</span></h1>
+          <p class="hero-text">
+            I build applied ML and scientific computing systems across insider threat detection,
+            ocean and weather data, quantum simulation, and geospatial risk tools. My portfolio is
+            project-first: what I have built, measured, presented, and shipped.
+          </p>
+
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="assets/suramya-angdembay-resume.pdf">
+              <i data-lucide="file-text" aria-hidden="true"></i>
+              Resume
+            </a>
+            <a class="button" href="https://github.com/SuramyaAngdembay">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
+            <a class="button" href="https://www.linkedin.com/in/suramya-raj-angdembay/">
+              <i data-lucide="linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Portfolio focus summary">
+          <img src="assets/suramya-angdembay.jpg" alt="Suramya Angdembay" class="profile-photo" />
+          <div class="focus-board">
+            <div>
+              <span class="metric">17</span>
+              <span class="metric-label">public GitHub repos</span>
+            </div>
+            <div>
+              <span class="metric">23</span>
+              <span class="metric-label">eBay ML public rank</span>
+            </div>
+            <div>
+              <span class="metric">2</span>
+              <span class="metric-label">conference talks</span>
+            </div>
+          </div>
+          <div class="signal-grid" aria-hidden="true">
+            <span class="signal high"></span>
+            <span class="signal mid"></span>
+            <span class="signal low"></span>
+            <span class="signal high"></span>
+            <span class="signal low"></span>
+            <span class="signal mid"></span>
+            <span class="signal high"></span>
+            <span class="signal mid"></span>
+            <span class="signal low"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-strip" aria-label="Project focus areas">
+        <div>
+          <span>Applied ML</span>
+          <strong>NER, anomaly detection, forecasting</strong>
+        </div>
+        <div>
+          <span>Scientific Systems</span>
+          <strong>HPC, Slurm, ocean data, APIs</strong>
+        </div>
+        <div>
+          <span>Data Products</span>
+          <strong>Dashboards, mobile apps, geospatial workflows</strong>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="research">Research</button>
+          <button class="filter-button" type="button" data-filter="ml">ML</button>
+          <button class="filter-button" type="button" data-filter="data">Data apps</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-category="research ml systems">
+            <div class="card-topline">
+              <span class="project-type">Research</span>
+              <span class="date">2024 - present</span>
+            </div>
+            <h3>Insider Threat Detection</h3>
+            <p>
+              Unsupervised anomaly detection pipeline for CMU CERT insider behavior data using
+              Featuretools DFS, PCA dimensionality reduction, and Gaussian Mixture Models.
+            </p>
+            <ul class="compact-list">
+              <li>Built feature synthesis over email, HTTP, device, file, logon, and psychometric logs.</li>
+              <li>Used PCA to retain dominant behavioral variance before density-based anomaly scoring.</li>
+              <li>Ran large processing workflows on USM's Magnolia HPC cluster with Slurm.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>Featuretools</span>
+              <span>PCA</span>
+              <span>GMM</span>
+              <span>HPC</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/Insider-threat-Dfs">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card featured" data-category="ml">
+            <div class="card-topline">
+              <span class="project-type">Challenge</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>eBay University ML Challenge</h3>
+            <p>
+              End-to-end German eBay Motors NER pipeline that extracts structured product
+              attributes from short listing titles.
+            </p>
+            <ul class="compact-list">
+              <li>Domain-adaptive MLM pretraining on 2M unlabeled listing titles.</li>
+              <li>Fine-tuned XLM-RoBERTa with BIO token labels for aspect extraction.</li>
+              <li>Generated EvalAI-ready submissions and reached Rank 23 on the public leaderboard.</li>
+            </ul>
+            <div class="tag-row">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>NLP</span>
+              <span>XLM-RoBERTa</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/USM_ML_renassaince_ebay_challenge">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="research ml systems">
+            <div class="card-topline">
+              <span class="project-type">Quantum</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Quantum Galton Board Simulator</h3>
+            <p>
+              Qiskit simulator for quantum walks that maps a Galton board to reusable n-layer
+              circuits and compares quantum, classical, and biased distributions.
+            </p>
+            <div class="tag-row">
+              <span>Qiskit</span>
+              <span>Python</span>
+              <span>Simulation</span>
+              <span>Metrics</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/quantum-galton-box">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="data systems">
+            <div class="card-topline">
+              <span class="project-type">API</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>AireChemistry Weather API</h3>
+            <p>
+              FastAPI-backed South Africa weather and air-quality service with gridded fields,
+              point visualizations, GeoJSON industrial layers, and NumPy data pipelines.
+            </p>
+            <div class="tag-row">
+              <span>FastAPI</span>
+              <span>NumPy</span>
+              <span>GeoJSON</span>
+              <span>Weather data</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/AireChemistry_weather_dashboard">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml data">
+            <div class="card-topline">
+              <span class="project-type">Mobile ML</span>
+              <span class="date">2024 - 2025</span>
+            </div>
+            <h3>Wildfire Spread Prediction App</h3>
+            <p>
+              CNN-based wildfire spread predictor paired with a React Native map interface, Firebase
+              notifications, and FastAPI model serving on AWS EC2.
+            </p>
+            <div class="tag-row">
+              <span>TensorFlow</span>
+              <span>React Native</span>
+              <span>FastAPI</span>
+              <span>Firebase</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/Fire-Hazard-Mobile-App">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml research">
+            <div class="card-topline">
+              <span class="project-type">Modeling</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Olympic Medal Prediction</h3>
+            <p>
+              COMAP mathematical modeling project for 2028 Olympic medal prediction using feature
+              selection, Random Forest regression, and ARIMAX validation.
+            </p>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>Regression</span>
+              <span>Random Forest</span>
+              <span>ARIMAX</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/mcm25">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml data">
+            <div class="card-topline">
+              <span class="project-type">Forecasting</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Storm Power Outage Prediction</h3>
+            <p>
+              Weather-risk ML project investigating how storm events, regional patterns, and lagged
+              meteorological features relate to power outages.
+            </p>
+            <div class="tag-row">
+              <span>Jupyter</span>
+              <span>Random Forest</span>
+              <span>NOAA data</span>
+              <span>EDA</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/Storm-power-outage-prediction">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="data systems">
+            <div class="card-topline">
+              <span class="project-type">Platform</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Gulf South Scholars Hub</h3>
+            <p>
+              Full-stack collaboration platform for research projects, events, resources, member
+              profiles, notifications, and real-time messaging.
+            </p>
+            <div class="tag-row">
+              <span>Vue 3</span>
+              <span>TypeScript</span>
+              <span>FastAPI</span>
+              <span>MySQL</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/gulf-south-platform">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="presentations" class="content-section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Conferences and talks</p>
+          <h2>Presentations</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Mar 2025</span>
+            <div>
+              <h3>AMS Southeastern Sectional Meeting</h3>
+              <p>
+                Presented "Insider threat detection using Principal Component Analysis" in the
+                Undergraduate Mathematics and Statistics Research III special session at Clemson
+                University.
+              </p>
+              <a class="text-link" href="https://meetings.ams.org/math/spring2025se/meetingapp.cgi/Paper/47064">
+                <i data-lucide="external-link" aria-hidden="true"></i>
+                AMS talk listing
+              </a>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Nov 2025</span>
+            <div>
+              <h3>SC25, The International Conference for High Performance Computing</h3>
+              <p>
+                Selected for the ACM SIGHPC Immersion Program, completed an OLCF HPC/AI crash
+                course, and gave a Student HQ lightning talk on the SIGHPCI experience.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Jul 2025</span>
+            <div>
+              <h3>CompuCell3D Summer School and Hackathon</h3>
+              <p>
+                Accepted into Indiana University's virtual summer school and hackathon on multicell
+                virtual tissue modeling.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Jun - Jul 2025</span>
+            <div>
+              <h3>WISER and Womanium Quantum Summer Program</h3>
+              <p>
+                Participated in the quantum computing summer program and built the Quantum Galton
+                Board project with a final presentation deck.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Research and applied work</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="experience-grid">
+          <article>
+            <h3>Undergraduate Research Assistant</h3>
+            <p class="meta">University of Southern Mississippi | Aug 2024 - present</p>
+            <p>
+              Researching PCA-based dimensionality reduction and unsupervised anomaly detection on
+              insider threat behavior data, with parallel workflows on Magnolia HPC.
+            </p>
+          </article>
+          <article>
+            <h3>Research Assistant</h3>
+            <p class="meta">Institute for Advanced Analytics and Society, USM | Jan 2026 - present</p>
+            <p>
+              Contributing to Aquaview, a NOAA-facing ocean data platform, including MCP connector
+              work and mixed layer depth computation workflows.
+            </p>
+          </article>
+          <article>
+            <h3>AireChemistry Weather API Developer</h3>
+            <p class="meta">AireChemistry | Jul 2025 - Dec 2025</p>
+            <p>
+              Designed FastAPI endpoints, data arrays, map textures, and point-based weather and
+              air-quality visualizations for South Africa.
+            </p>
+          </article>
+          <article>
+            <h3>Mathematical Modeling and Optimization Intern</h3>
+            <p class="meta">Optimal Answers LLC | Jan 2026 - present</p>
+            <p>
+              Building structured project data and optimization rules for Gulf Coast Restoration
+              Fund allocation models.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Project-driven research, data systems, and ML.</h2>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:sralimbu@gmail.com">
+          <i data-lucide="mail" aria-hidden="true"></i>
+          Email
+        </a>
+        <a href="https://github.com/SuramyaAngdembay">
+          <i data-lucide="github" aria-hidden="true"></i>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/suramya-raj-angdembay/">
+          <i data-lucide="linkedin" aria-hidden="true"></i>
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
