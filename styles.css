@@ -320,6 +320,29 @@ h3 {
   line-height: 1.35;
 }
 
+.featured-mention {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.15fr) auto;
+  gap: 18px 24px;
+  align-items: center;
+  width: min(1120px, calc(100% - 32px));
+  margin: 18px auto 0;
+  padding: 22px;
+  border: 1px solid var(--highlight-border);
+  border-radius: 12px;
+  background: var(--highlight);
+  box-shadow: var(--shadow);
+}
+
+.featured-mention h2 {
+  font-size: clamp(1.45rem, 2.6vw, 2.05rem);
+}
+
+.featured-mention p:not(.eyebrow) {
+  color: var(--text);
+  line-height: 1.65;
+}
+
 .content-section {
   padding-top: 44px;
 }
@@ -573,6 +596,7 @@ h3 {
   }
 
   .project-strip,
+  .featured-mention,
   .experience-grid {
     grid-template-columns: 1fr;
   }
@@ -586,6 +610,7 @@ h3 {
   .site-header,
   .hero-section,
   .project-strip,
+  .featured-mention,
   .content-section,
   .site-footer {
     width: min(342px, calc(100% - 48px));
