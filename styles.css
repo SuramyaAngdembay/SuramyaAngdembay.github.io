@@ -358,16 +358,19 @@ h3 {
 }
 
 .section-heading::after {
-  content: "Built systems, research prototypes, conference work, and challenge entries. The list stays project-first, with repo links attached where the code is public.";
+  content: "";
   max-width: 70ch;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.65;
 }
 
-.split-section .section-heading::after,
-#experience .section-heading::after {
-  content: "";
+#research .section-heading::after {
+  content: "Two audits of what language models actually detect, and one of a physical forecast model. Advisors are linked; papers are listed below.";
+}
+
+#projects .section-heading::after {
+  content: "Research code, challenge entries, and data systems, with repository links where the code is public.";
 }
 
 .filter-bar {
