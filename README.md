@@ -18,4 +18,4 @@ Then visit `http://localhost:8000`.
 2. Push these files to the repository's default branch.
 3. In GitHub, open Settings > Pages and publish from the root of the default branch.
 
-The resume link points to `assets/suramya-angdembay-resume.pdf`.
+The CV button points to `assets/suramya-angdembay-cv.pdf` (built from `career-suramya/cv/cv.tex`; copy the new `cv.pdf` here whenever the CV changes). The older `assets/suramya-angdembay-resume.pdf` is kept for existing links.
