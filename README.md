@@ -1,6 +1,6 @@
 # Suramya Angdembay Portfolio
 
-Static GitHub Pages portfolio focused on projects, conference presentations, and applied research.
+Static GitHub Pages site. `index.html` is a short home page (bio, news, papers); `research.html` carries the longer about text, research entries, projects, talks, honors, and experience. Both share `styles.css` and `script.js`.
 
 ## Local preview
 

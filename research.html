@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Research of Suramya Raj Angdembay: chain-of-thought faithfulness, a mechanistic audit of insider-threat language models, and error analysis of NOAA RTOFS ocean forecasts; projects, talks, honors."
+    />
+    <title>Research | Suramya Angdembay</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Suramya Angdembay home">
+        <span class="brand-mark">SA</span>
+        <span>Suramya Angdembay</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="index.html#papers">Papers</a>
+        <a href="assets/suramya-angdembay-cv.pdf">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">About</p>
+          <h1><span>Research</span></h1>
+          <div class="hero-text">
+            <p>
+              I study Computer Science and Mathematics in the Honors College at The University of
+              Southern Mississippi. My research asks what language models actually do when we
+              evaluate them: whether chain-of-thought explanations are faithful, whether benchmark
+              scores measure what they claim to, and what internal features a model relies on.
+            </p>
+            <p>
+              Two lines of work: a behavioral audit of unfaithful chain-of-thought detection
+              (arXiv preprint, under review at ACL Rolling Review) with Dr. Nick Rahimi through the
+              CRA UR2PhD program, and a mechanistic audit of insider-threat language models with
+              sparse autoencoders and causal interventions (manuscript in preparation) with
+              Dr. Haiyan Tian. With Dr. Gregg Jacobs at the Institute for Advanced Analytics and
+              Society, I analyze the errors of NOAA's RTOFS ocean forecasts against Argo floats.
+            </p>
+            <p>
+              Break Through Tech AI Fellow (Cornell Tech, 2026); ACM SIGHPC Immersion Program at
+              SC25, one of 15 students selected nationally; Honors Keystone Scholar.
+            </p>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Research focus areas">
+          <div class="project-strip" style="margin-top: 0; grid-template-columns: 1fr">
+            <div>
+              <span>Interpretability</span>
+              <strong>Sparse autoencoders, causal interventions, linear probes</strong>
+            </div>
+            <div>
+              <span>Evaluation</span>
+              <strong>Chain-of-thought faithfulness, validity of LLM benchmarks</strong>
+            </div>
+            <div>
+              <span>Scientific ML</span>
+              <strong>Forecast error analysis, honest holdout design, HPC</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section id="research" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Research interests</p>
+          <h2>Research Experience</h2>
+        </div>
+        <div class="tag-row" aria-label="Research interests">
+          <span>Mechanistic Interpretability</span>
+          <span>Chain-of-Thought Faithfulness</span>
+          <span>Trustworthy AI</span>
+          <span>Sparse Autoencoders</span>
+          <span>Causal Interventions</span>
+          <span>Validity of LLM Benchmarks</span>
+          <span>Forecast Error Analysis</span>
+        </div>
+
+        <div class="experience-grid" style="margin-top: 24px">
+          <article>
+            <h3>Chain-of-Thought Faithfulness in Language Models</h3>
+            <p class="meta">
+              Advisor: <a href="https://scholar.google.com/citations?user=04OnjLYAAAAJ">Dr. Nick Rahimi</a>
+              | UR2PhD program (CRA-WP) | May 2026 - present
+            </p>
+            <ul class="compact-list">
+              <li>
+                Audited behavioral detectors of unfaithful chain-of-thought on FaithCoT-Bench by
+                answer correctness: where models are wrong, and most unfaithfulness occurs, no
+                tested signal was above chance.
+              </li>
+              <li>
+                Showed answer incorrectness alone beats every purpose-built detector and the
+                step-removal metric anti-correlates with human labels; linear probes recover signal
+                behavioral detectors miss.
+              </li>
+            </ul>
+            <a class="text-link" href="https://arxiv.org/abs/2607.23458">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              arXiv preprint
+            </a>
+            <a class="text-link" href="https://doi.org/10.5281/zenodo.22121677">
+              <i data-lucide="database" aria-hidden="true"></i>
+              Code and data (Zenodo)
+            </a>
+          </article>
+
+          <article>
+            <h3>Interpretable Insider-Threat Detection</h3>
+            <p class="meta">
+              Advisor: <a href="https://scholar.google.com/citations?user=owNUzCcAAAAJ">Dr. Haiyan Tian</a>
+              | Cross Mathematics Research Scholar | Aug 2024 - present
+            </p>
+            <ul class="compact-list">
+              <li>
+                Designed and ran a comparison of user-activity representations, from PCA to sparse
+                features of a QLoRA-adapted LLM, on the CERT benchmarks; basis of the Honors Thesis
+                and two talks.
+              </li>
+              <li>
+                Built a mechanistic audit of what a benign-trained language model detects:
+                sparse-autoencoder decomposition, causal interventions against matched controls,
+                token-level attribution. Manuscript in preparation.
+              </li>
+            </ul>
+          </article>
+
+          <article style="grid-column: 1 / -1">
+            <h3>ML Error Analysis of NOAA Ocean Forecasts</h3>
+            <p class="meta">
+              Advisor: <a href="https://scholar.google.com/citations?user=B7nNTjwAAAAJ">Dr. Gregg Jacobs</a>
+              | Institute for Advanced Analytics and Society, USM | Jan 2026 - present
+            </p>
+            <ul class="compact-list">
+              <li>
+                Showed RTOFS's hurricane-heat-potential error against Argo is largely systematic
+                (too low in the tropics, shared with GOFS); a correction learned from Argo removes
+                about a third of it on forward tests.
+              </li>
+              <li>
+                Found random-month holdouts overstate skill because errors persist for weeks to
+                months, so tests use forward-in-time blocks; noise-column and shuffle tests showed a
+                quarter of inputs carry no signal.
+              </li>
+              <li>
+                Showed RTOFS's own 7-day change is the most useful input and anti-correlates with
+                its error (RTOFS overshoots); its detail below about 50 km is mostly unrealistic,
+                with no sign of misplaced fronts.
+              </li>
+            </ul>
+            <a class="text-link" href="https://github.com/AQUAVIEW-DAH/HHP-ML-Recomputations">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+        </div>
+      </section>
+
+<section id="projects" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="research">Research</button>
+          <button class="filter-button" type="button" data-filter="ml">ML</button>
+          <button class="filter-button" type="button" data-filter="data">Data apps</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-category="research ml">
+            <div class="card-topline">
+              <span class="project-type">Research</span>
+              <span class="date">2026</span>
+            </div>
+            <h3>Chain-of-Thought Faithfulness Audit</h3>
+            <p>
+              Behavioral detectors of unfaithful reasoning, evaluated against FaithCoT-Bench's
+              human labels and stratified by answer correctness; linear probes on model
+              activations where behavioral signals fail.
+            </p>
+            <ul class="compact-list">
+              <li>Correctness-stratified evaluation across four open models and an LLM judge.</li>
+              <li>Released analysis code and results on Zenodo; preprint on arXiv.</li>
+            </ul>
+            <div class="tag-row">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>Linear probes</span>
+              <span>Evaluation</span>
+            </div>
+            <a class="text-link" href="https://arxiv.org/abs/2607.23458">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              arXiv preprint
+            </a>
+            <a class="text-link" href="https://doi.org/10.5281/zenodo.22121677">
+              <i data-lucide="database" aria-hidden="true"></i>
+              Zenodo release
+            </a>
+          </article>
+
+          <article class="project-card featured" data-category="research ml systems">
+            <div class="card-topline">
+              <span class="project-type">Research</span>
+              <span class="date">2024 - present</span>
+            </div>
+            <h3>Insider Threat Detection: From PCA to Sparse Features</h3>
+            <p>
+              Started as an unsupervised anomaly-detection pipeline on CMU CERT data (Featuretools
+              DFS, PCA, Gaussian mixtures); now a mechanistic audit of a QLoRA-adapted language
+              model with sparse autoencoders and causal interventions.
+            </p>
+            <ul class="compact-list">
+              <li>Feature synthesis over email, HTTP, device, file, logon, and psychometric logs.</li>
+              <li>Sparse-autoencoder features of adapter-induced changes, tested with matched-control interventions.</li>
+              <li>Workflows on USM's Magnolia and Purdue Anvil clusters with Slurm.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>PCA</span>
+              <span>QLoRA</span>
+              <span>Sparse autoencoders</span>
+              <span>HPC</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/Insider-threat-Dfs">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              PCA-era repository
+            </a>
+          </article>
+
+          <article class="project-card featured" data-category="research ml data systems">
+            <div class="card-topline">
+              <span class="project-type">AQUAVIEW</span>
+              <span class="date">2026</span>
+            </div>
+            <h3>RTOFS Error Analysis for Hurricane Heat Potential</h3>
+            <p>
+              Global analysis of NOAA RTOFS hurricane-heat-potential and 26 °C-isotherm-depth
+              errors against Argo floats, with TEOS-10 profile processing, gradient-boosted
+              corrections as the probe, and noise-column, shuffle, and forward-holdout tests.
+            </p>
+            <ul class="compact-list">
+              <li>Same-day collocation of Argo profiles with RTOFS fields; forward-in-time evaluation.</li>
+              <li>Findings organized as a sequence of eight questions, each answered by one or two figures.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>TEOS-10</span>
+              <span>XGBoost</span>
+              <span>RTOFS</span>
+              <span>Argo</span>
+            </div>
+            <a class="text-link" href="https://github.com/AQUAVIEW-DAH/HHP-ML-Recomputations">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="research ml data systems">
+            <div class="card-topline">
+              <span class="project-type">AQUAVIEW</span>
+              <span class="date">2026</span>
+            </div>
+            <h3>MLD ML Recomputation</h3>
+            <p>
+              Historical replay prototype for machine-learning-corrected mixed layer depth in the
+              Gulf of Mexico, combining RTOFS model fields with nearby in-situ observations and
+              provenance-aware confidence output.
+            </p>
+            <ul class="compact-list">
+              <li>Replay sandbox for querying corrected MLD at a clicked map location and date.</li>
+              <li>Mean absolute error 7.1 to 6.4 m on a held-out 2025 replay window.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>RTOFS</span>
+              <span>Argo/WOD</span>
+            </div>
+            <a class="text-link" href="https://github.com/AQUAVIEW-DAH/MLD-ML-Recomputation">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml">
+            <div class="card-topline">
+              <span class="project-type">Challenge</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>eBay University ML Challenge</h3>
+            <p>
+              End-to-end German eBay Motors NER pipeline that extracts structured product
+              attributes from short listing titles.
+            </p>
+            <ul class="compact-list">
+              <li>Domain-adaptive MLM pretraining on 2M unlabeled listing titles.</li>
+              <li>Fine-tuned XLM-RoBERTa with BIO token labels for aspect extraction.</li>
+              <li>Reached rank 23 on the public leaderboard.</li>
+            </ul>
+            <div class="tag-row">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>NLP</span>
+              <span>XLM-RoBERTa</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/USM_ML_renassaince_ebay_challenge">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="research ml systems">
+            <div class="card-topline">
+              <span class="project-type">Quantum</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Quantum Galton Board Simulator</h3>
+            <p>
+              Qiskit simulator for quantum walks that maps a Galton board to reusable n-layer
+              circuits and compares quantum, classical, and biased distributions.
+            </p>
+            <div class="tag-row">
+              <span>Qiskit</span>
+              <span>Python</span>
+              <span>Simulation</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/quantum-galton-box">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="data systems">
+            <div class="card-topline">
+              <span class="project-type">API</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>AireChemistry Weather API</h3>
+            <p>
+              FastAPI-backed South Africa weather and air-quality service with gridded fields,
+              point visualizations, GeoJSON industrial layers, and NumPy data pipelines.
+            </p>
+            <div class="tag-row">
+              <span>FastAPI</span>
+              <span>NumPy</span>
+              <span>GeoJSON</span>
+              <span>Weather data</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/AireChemistry_weather_dashboard">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml data">
+            <div class="card-topline">
+              <span class="project-type">Mobile ML</span>
+              <span class="date">2024 - 2025</span>
+            </div>
+            <h3>Wildfire Spread Prediction App</h3>
+            <p>
+              CNN-based wildfire spread predictor paired with a React Native map interface, Firebase
+              notifications, and FastAPI model serving on AWS EC2.
+            </p>
+            <div class="tag-row">
+              <span>TensorFlow</span>
+              <span>React Native</span>
+              <span>FastAPI</span>
+              <span>Firebase</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/Fire-Hazard-Mobile-App">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card" data-category="ml research">
+            <div class="card-topline">
+              <span class="project-type">Modeling</span>
+              <span class="date">2025</span>
+            </div>
+            <h3>Olympic Medal Prediction</h3>
+            <p>
+              First-time COMAP MCM project on 2028 Olympic medal prediction. The team tested linear
+              regression, ARIMAX, Bayesian and grey models, then chose Random Forest regression for
+              the final pipeline. COMAP featured the team's story.
+            </p>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>Random Forest</span>
+              <span>ARIMAX</span>
+              <span>COMAP MCM</span>
+            </div>
+            <a class="text-link" href="https://github.com/SuramyaAngdembay/mcm25">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              View repository
+            </a>
+            <a class="text-link" href="https://www.comap.com/blog/item/first-time-mcm-team?category_id=42">
+              <i data-lucide="newspaper" aria-hidden="true"></i>
+              Read COMAP feature
+            </a>
+          </article>
+        </div>
+      </section>
+
+<section id="presentations" class="content-section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Presentations and talks</p>
+          <h2>Talks</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Apr 2026</span>
+            <div>
+              <h3>33rd USA/USM/SELU Research Mini-Conference</h3>
+              <p>
+                "Continuous Time Markov Chains for Insider Threat Behavior Modeling" (with
+                H. Tian).
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Nov 2025</span>
+            <div>
+              <h3>SC25, The International Conference for High Performance Computing</h3>
+              <p>
+                Lightning talk at Student HQ as part of the ACM SIGHPC Immersion Program, after
+                an OLCF HPC/AI crash course. St. Louis.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Mar 2025</span>
+            <div>
+              <h3>AMS Spring Southeastern Sectional Meeting, Clemson University</h3>
+              <p>
+                "Principal Component Analysis for Data Compression, Noise Reduction, and Anomaly
+                Detection: A Case Study on Insider Threat Detection" (with H. Tian), undergraduate
+                research session.
+              </p>
+              <a class="text-link" href="https://meetings.ams.org/math/spring2025se/meetingapp.cgi/Paper/47064">
+                <i data-lucide="external-link" aria-hidden="true"></i>
+                AMS talk listing
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+<section id="honors" class="content-section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Fellowships, awards, programs</p>
+          <h2>Honors</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <div>
+              <h3>Break Through Tech AI Fellow, Cornell Tech</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3>ACM SIGHPC Immersion Program, SC25</h3>
+              <p>One of 15 students selected nationally.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025 - 2027</span>
+            <div>
+              <h3>Honors Keystone Scholar Award, USM</h3>
+              <p>$2,000 research grant funding the Senior Honors Thesis.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3>Wright W. &amp; Annie Rea Cross Mathematics Research Scholarship, USM</h3>
+              <p>$2,000 scholarship for faculty-led mathematics research.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3>eBay University Machine Learning Challenge</h3>
+              <p>23rd on the public leaderboard.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3>COMAP Mathematical Contest in Modeling</h3>
+              <p>Successful Participant; team story featured by COMAP.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Summer 2025</span>
+            <div>
+              <h3>Summer programs</h3>
+              <p>
+                CompuCell3D Biological Modeling summer school and hackathon (Indiana University);
+                WISER &amp; Womanium Quantum summer program.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+<section id="experience" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Additional experience</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="experience-grid">
+          <article>
+            <h3>AQUAVIEW Ocean Data Platform, Developer</h3>
+            <p class="meta">
+              Institute for Advanced Analytics and Society, USM | Supervisor: Dr. Josh Hill |
+              Jan 2026 - present
+            </p>
+            <p>
+              Built the data-ingestion pipeline and the review-and-publish controls for a
+              NOAA-facing ocean data platform; shipped to production.
+            </p>
+          </article>
+          <article>
+            <h3>Mathematical Modeling and Optimization Intern</h3>
+            <p class="meta">Optimal Answers LLC | Jan 2026 - May 2026</p>
+            <p>
+              Encoded legislative rules and scoring metrics for Gulf Coast Restoration Fund
+              projects into databases for optimization-based allocation.
+            </p>
+          </article>
+          <article>
+            <h3>Weather API Developer</h3>
+            <p class="meta">AireChemistry | Jul 2025 - Dec 2025</p>
+            <p>
+              Designed a FastAPI service serving gridded temperature, wind, and PM2.5 fields for
+              South Africa.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Interpretability, evaluation, and what models actually detect.</h2>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:Suramya.Angdembay@usm.edu">
+          <i data-lucide="mail" aria-hidden="true"></i>
+          Email
+        </a>
+        <a href="https://github.com/SuramyaAngdembay">
+          <i data-lucide="github" aria-hidden="true"></i>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/suramya-raj-angdembay/">
+          <i data-lucide="linkedin" aria-hidden="true"></i>
+          LinkedIn
+        </a>
+        <a href="assets/suramya-angdembay-cv.pdf">
+          <i data-lucide="file-text" aria-hidden="true"></i>
+          CV (PDF)
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
